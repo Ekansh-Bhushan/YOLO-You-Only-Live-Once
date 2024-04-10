@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block title %} Home{% endblock title %} 
 {% block body %}
-
     <header class="header">
         <nav class="navbar">
             <ul>
@@ -22,13 +21,32 @@
             <div class="button1"><button>Start Chat</button></div>
         </div>
         <div class="right">
-            <image src="{{url_for('static',filename='images/Ellipse_1.png')}}" class="pic1">
-            <image src="{{url_for('static',filename='images/female_doctor_hospital_1.png')}}" class="pic2">    
+            <img src="{{url_for('static',filename='images/Ellipse_1.png')}}" class="pic1">
+            <img src="{{url_for('static',filename='images/female_doctor_hospital_1.png')}}" class="pic2">    
         </div>
-        
     </section>
-    
+    <section class="section2">
+        <div class="quote abc">Our Services</div>
+        <div class="text3">
+            This websites aim to empower individuals to take control of their health by offering access to medical expertise, educational content, and tools for managing health-related concerns
+        </div>
+    </section>
+    <section class=section3>
+        <div class="left1">
+            <div class=pic3><img src="{{url_for('static',filename='images/Rectangle_36.png')}}"></div>
+        </div>
+        <div class="right1">
+            <div class="quote abc2">Free Consultation</div>
+            <div class="text2 abc3">Register here for a free consultation</div>
+                <form action="/" method="POST">            
+                    <input type="text" class="input" id="name" placeholder="  Full Name" name="name" required >
+                    <input type="text" class="input" id="phone" name="phone" placeholder= "  Your phone Number" required>
+                    <input type="email" class="input" id="email" placeholder="  Your Email" name="email" required>
+                    <input type="submit" value="Get a Free Consultation"/>
+                </form>
+                
+        </div>
+    </section>
     <footer>
-
     </footer>
 {% endblock body %}

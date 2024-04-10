@@ -4,29 +4,25 @@ body{
 .header{
     color: white;
     background-color: #CDE6EE;
-    /* border: 4px solid white; */
+   
     border-radius: 10px;
 }
 .navbar ul{
     overflow:auto;
     display: flex;
-    /* align-items:end; */
+   
     justify-content: right;
     
 }
 .navbar ul a{
     float:left;
     font-family: "Plus Jakarta Sans", sans-serif;
-    /* size: 20px; */
-    /* font-size: 30; */
-    /* font-style: italic; */
     font-weight: 800;
     text-decoration: none;
     list-style: none;
     padding-top: 10px;
     padding-right: 50px;
     padding-left: 40px;
-    /* gap:60px; */
     font-size: 17px;
 }
 .button{
@@ -40,8 +36,6 @@ button{
     font-size: 17px;
     background-color: #16C6E0;
     border-radius: 10px;
-    /* border: none; */
-    /* border: 1px solid black; */
 }
 .text{
     color: black;
@@ -49,23 +43,43 @@ button{
 .section{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     float:right;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    margin-left: -8px;
+    width:100vw;
+    height: 550px;
+    background-color: #96D7EE;
+}
+.section3{
+    display: flex;
+    flex-direction: row;
+    float:left;
+    width:100vw;
 }
 .left{
     width: 700px;
-    height: 600px;
+    height: 450px;
     background-color: #CDE6EE;
-    /* border: 1px solid black ; */
 }
 .right{
     width: 400px;
-    height: 600px;
-    /* background-color: forestgreen; */
+    height: 450px;
     position: relative;
     padding: 0%;
     margin: 0%;
-    /* border: 1px solid black ; */
+}
+.left1{
+    width: 50vw;
+    height: 500px;
+    border: 1px solid black;
+}
+.right1{
+    width: 50vw;
+    height: 500px;
+    border: 1px solid black;
 }
 .quote{
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -81,24 +95,26 @@ button{
 .text2{
     width:600px;
     text-align: center;
-    /* font-size: 34; */
     font-family: "Plus Jakarta Sans", sans-serif;
     color: black;
 }
 .pic1{
     position: absolute;
         top: -50;
-        /* bottom:; */
         left: 0;
 
 }
 .pic2{
     position: absolute;
-    top: 0px; /* Adjust as needed */
-    left: 0px; /* Adjust as needed */
+    top: 0px;
+    left: 0px;
 
 }
-
+.pic3{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
 .button1{
     display: flex;
     padding-top: 30px;
@@ -106,4 +122,66 @@ button{
     margin: auto;
     justify-content: center;
     align-items: center;
+}
+.abc{
+    width:100vw;
+    height: 50px;
+    padding: 0%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.text3{
+    width: 800px;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.abc2{
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.abc3{
+    font-size: 24px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    padding: 20px;
+    gap:30px;
+    
+}
+.input{
+    background-color:#82C3FF;
+    height: 200px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+input[type="submit"] {
+    
+    display: flex;
+    justify-content: center;
+    background-color:#82C3FF;
+    height: 450px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    color: #116D95;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 500px;
+    height: 40px;
+    
+}
+
+button:hover{
+    background-color: darkgreen;
 }
