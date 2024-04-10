@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block title %} Home{% endblock title %} 
+{% block body %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato&family=Lexend:wght@500;800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Tilt+Neon&display=swap"
-        rel="stylesheet">
-    <title>Document</title>
-
-</head>
-
-<body>
     <header class="header">
         <nav class="navbar">
             <ul>
@@ -35,8 +22,8 @@
             <div class="button1"><button>Start Chat</button></div>
         </div>
         <div class="right">
-            <img src="./images/Ellipse_1.png" alt="ellipse" class="pic1">
-            <img src="./images/female_doctor_hospital_1.png" alt="doc" class="pic2">
+            <image src="{{url_for('static',filename='images/Ellipse_1.png')}}" class="pic1">
+            <image src="{{url_for('static',filename='images/female_doctor_hospital_1.png')}}" class="pic2">    
         </div>
         
     </section>
@@ -44,5 +31,4 @@
     <footer>
 
     </footer>
-</body>
-</html>
+{% endblock body %}
