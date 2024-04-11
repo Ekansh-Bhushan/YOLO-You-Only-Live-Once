@@ -1,2 +1,5 @@
-opneai
- 
+Flask==3.0.3
+flask_mysqldb==2.0.0
+openai==1.17.0
+Pillow==10.3.0
+pytesseract==0.3.10
