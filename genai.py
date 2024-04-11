@@ -10,7 +10,7 @@ client = OpenAI(
     api_key=mykey,
 )
 
-# chat_completion = client.chat.completions.create(
+#chat_completion = client.chat.completions.create(
 #     messages=[
 #         {
 #             "role": "user",
@@ -19,8 +19,7 @@ client = OpenAI(
 #     ],
 #     model="gpt-3.5-turbo",
 # )
-
-# print(chat_completion.choices)
+#print(chat_completion.choices)
 
 def medications(symptoms):
     chat_completion = client.chat.completions.create(
@@ -51,7 +50,8 @@ def medications(symptoms):
 
     content = chat_completion.choices[0].message.content
     content_list = eval(content)
-    print(content_list)
+    # print(content_list)
+    return content_list
 
 
-medications("i am having a cough and cold")
+medications("i am having fever and head ache")
