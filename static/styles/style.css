@@ -74,12 +74,12 @@ button{
 .left1{
     width: 50vw;
     height: 500px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .right1{
     width: 50vw;
     height: 500px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .quote{
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -151,7 +151,7 @@ form{
     display: flex;
     flex-direction: column;
     width: 500px;
-    height: 250px;
+    height: 400px;
     margin: auto;
     padding: 20px;
     gap:30px;
@@ -159,7 +159,7 @@ form{
 }
 .input{
     background-color:#82C3FF;
-    height: 200px;
+    height: 400px;
     font-size: 18px;
     border-radius: 10px;
     border: none;
@@ -184,4 +184,7 @@ input[type="submit"] {
 
 button:hover{
     background-color: darkgreen;
+}
+.link{
+    padding-left: 220px;
 }

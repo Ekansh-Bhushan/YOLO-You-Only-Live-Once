@@ -12,42 +12,24 @@
             </ul>
         </nav>
     </header>
-    <section class="section">
-        <div class="left">
-            <div class="quote">“ Stay Informed, Stay Healthy        Explore YOLO Today ”</div>
-            <div class="text2">
-                This websites aim to empower individuals to take control of their health by offering access to medical expertise, educational content, and tools for managing health-related concerns
-            </div>
-            <div class="button1"><button>Start Chat</button></div>
-        </div>
-        <div class="right">
-            <img src="{{url_for('static',filename='images/Ellipse_1.png')}}" class="pic1">
-            <img src="{{url_for('static',filename='images/female_doctor_hospital_1.png')}}" class="pic2">    
-        </div>
-    </section>
-    <section class="section2">
-        <div class="quote abc">Our Services</div>
-        <div class="text3">
-            This websites aim to empower individuals to take control of their health by offering access to medical expertise, educational content, and tools for managing health-related concerns
-        </div>
-    </section>
     <section class=section3>
         <div class="left1">
             <div class=pic3><img src="{{url_for('static',filename='images/Rectangle_36.png')}}"></div>
         </div>
         <div class="right1">
             <div class="quote abc2">Free Consultation</div>
-            <div class="text2 abc3">Register here for a free consultation</div>
+            <div class="text2 abc3">Register here for doctor Registeration</div>
                 <form action="/" method="POST">            
                     <input type="text" class="input" id="username" placeholder="  Enter username" name="username" required >
                     <input type="email" class="input" id="email" placeholder="  Enter Your Email" name="email" required>
                     <input type="text" class="input" id="firstname" placeholder="  First Name" name="firstname" required >
                     <input type="text" class="input" id="lastname" placeholder="  Last Name" name="lastname" required >
                     <input type="text" class="input" id="phone" name="phone" placeholder= "  Your phone Number" required>
-                    <input type="date" class="input" id="dob1" name="dob1" placeholder= "  Date of Birth" required>
+                    <input type="text" class="input" id="spec" name="spec" placeholder= "  Your Specialization" required>
                     <input type="submit" value="Get a Free Consultation"/>
+
                 </form>
-            <div class=link><a href="/doctor_reg">Are you a Doctor? Sign in here</a></div>
+                
         </div>
     </section>
     <footer>
