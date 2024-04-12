@@ -6,3 +6,6 @@ img =Image.open(r"pres.jpg")
 text=list(tess.image_to_string(img).splitlines())
 
 print(text)
+
+
+print(text)

@@ -48,4 +48,5 @@ def doctors():
     return render_template('doctor_reg.html')
 
 if __name__ == "__main__":
+    
     app.run(debug=True)
