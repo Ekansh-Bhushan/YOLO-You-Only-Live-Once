@@ -46,9 +46,67 @@ def medications(symptoms):
     print(content_list)
     return content_list
 
+def typeOfDoctor(symptoms):
+    chat_completion = client.chat.completions.create(
+        messages=[
+            {
+                "role": "user",
+                "content": "I am giving you the list of type of doctos and based on my problem/symptoms you have to tell me \
+                    which type of doctor best suited for me.",
+            },
+            {
+                "role" : "user",
+                "content" : """Cardiologist: heart diseases - coronary artery disease, arrhythmias, and heart failure
+
+                            Dermatologist: conditions of skin, hair, and nails- acne, eczema, and skin cancer
+
+                            Endocrinologist: problems of endocrine system- diabetes, thyroid disorsers, and hormonal imbalances
+
+                            Gastroenterologist: disorders of the digestive system- gastrointestinal bleeding, irritable bowel syndrome (IBS), and Crohn's disease
+
+                            Neurologist: nervous system- Parkinson's disease, epilepsy, and multiple sclerosis
+
+                            Oncologist: cancer- chemotherapy, radiation therapy, and surgery
+
+                            Orthopedic - musculoskeletal conditions- fractures, arthritis, and torn ligaments
+
+
+                            Pediatrician: infants, children, and adolescents- vaccinations, growth and development, childhood illnesses
+
+                            Psychiatrist: mental health disorders, including depression, anxiety, bipolar disorder, and schizophrenia
+
+
+                            Pulmonologist: respiratory system-asthma, chronic obstructive pulmonary disease (COPD), and pneumonia.
+
+
+
+                            Rheumatologist: autoimmune and inflammatory disorders affecting the joints and soft tissues- rheumatoid arthritis, lupus, and fibromyalgia
+
+
+                            Ophthalmologist: eyes - cataracts, glaucoma & macular degeneration 
+
+                            Urologist: urinary tract and male reproductive system- kidney stones, urinary incontinence, and prostate related problems
+
+                            Obstetrician-Gynecologist : women's reproductive health- pregnancy, childbirth, and disorders of the female reproductive system ( menstrual disorders, infertility, and ovarian cysts /PCOS)
+
+                            Trichologist: scalp and hair health
+
+                            Radiologist: diagnosis of diseases and injuries using medical imaging techniques- x rays, ct scans, MRI scans, ultrasound & nuclear medicine"""
+            },
+            {
+                "role" : "user",
+                "content" : f"here is my symptoms : {symptoms}"
+            }
+        ],
+        model="gpt-3.5-turbo",
+        doctortype = chat_completion.choices[0].message.content
+        print(doctortype)
+        return doctortype
+    )
 
 def doctorConnect(symptoms,patientName,doctorName,current_date,dob):
     med = medications(symptoms)
+    doctorType = typeOfDoctor(symptoms)
 
     chat_completion = client.chat.completions.create(
         messages=[
