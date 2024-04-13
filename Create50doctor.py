@@ -5,8 +5,8 @@ from faker import Faker
 from dotenv import load_dotenv
 
 load_dotenv()
-
-SQLpassword = os.getenv("SQL_PASSWORD")
+SQL_PASSWORD = "manu1234"
+SQLpassword = os.getenv(SQL_PASSWORD)
 
 specialties = [
     "Cardiologist",
@@ -30,7 +30,7 @@ specialties = [
 def connect_to_mysql():
     try:
         connection = mysql.connector.connect(
-            host="localhost", user="root", password=SQLpassword
+            host="localhost", user="root", password="manu1234"
         )
         if connection.is_connected():
             print("Connected to MySQL server")
