@@ -38,3 +38,7 @@ To run YOLO locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Ekansh-Bhushan/Vihaan007.git
+
+2. Install the required file:
+   ```bash
+   pip install -r requirements.txt
