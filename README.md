@@ -30,6 +30,10 @@ YOLO is an innovative healthcare platform aimed at revolutionizing the patient e
 ## Business Model
 
 YOLO's revenue streams include subscription plans, transaction fees, advertisement revenue, data monetization, partnerships, and white-label solutions.
+## Some Snippets of the Platform
+1. Login area for Patients
+![login](https://github.com/Ekansh-Bhushan/Vihaan007/assets/129383527/46727eb5-9aab-4768-81a4-04139d231ef7)
+
 
 ## Getting Started
 
