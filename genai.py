@@ -42,9 +42,9 @@ def medications(symptoms):
     )
 
     content = chat_completion.choices[0].message.content
-    content_list = eval(content)
-    print(content_list)
-    return content_list
+    content = eval(content)
+    print(content)
+    return content
 
 def typeOfDoctor(symptoms):
     chat_completion = client.chat.completions.create(
@@ -75,14 +75,24 @@ def typeOfDoctor(symptoms):
             {
                 "role" : "user",
                 "content" : f"Here are my symptoms: {symptoms}"
+            },
+            {
+                "role" : "user",
+                "content" : "Please tell me the type of doctor now"            
+            },
+            {
+                "role" : "user",
+                "content" : "only give me type of doctor nothing else"            
             }
         ],
-        model="text-davinci-003",
+        model="gpt-3.5-turbo",
     )
     
-    doctortype = chat_completion.choices[0].message['content']
+    doctortype = chat_completion.choices[0].message.content
     print(doctortype)
     return doctortype
+
+
 
 def doctorConnect(symptoms, patientName, doctorName, current_date, dob):
     med = medications(symptoms)
@@ -131,7 +141,7 @@ This prescription is valid for a period of 14 days."""
                 "content" : "Write the proper prescription and please write some sample names for these medicines also "
             },
         ],
-        model="text-davinci-003",
+        model="gpt-3.5-turbo",
     )
 
     content = chat_completion.choices[0].message.content
