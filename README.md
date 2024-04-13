@@ -7,7 +7,7 @@
 
 YOLO is an innovative healthcare platform aimed at revolutionizing the patient experience by providing accessible, personalized, and ethical healthcare solutions. Leveraging advanced AI technology and a user-friendly interface, YOLO empowers individuals to take control of their health and well-being, making healthcare services convenient, transparent, and empowering for all users.
 
-##Unique Selling Proposition (USP)
+## Unique Selling Proposition (USP)
 
 1. Seamless Accessibility: YOLO ensures that healthcare services are accessible to all, offering a user-friendly platform that can be accessed anytime, anywhere, through web or mobile devices..
 2. Convenient Virtual Care: YOLO enables patients to connect with healthcare providers virtually, eliminating the need for travel and reducing waiting times, ensuring healthcare is convenient and readily available.
