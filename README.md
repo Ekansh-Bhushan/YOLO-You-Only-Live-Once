@@ -17,6 +17,10 @@ YOLO is an innovative healthcare platform aimed at revolutionizing the patient e
 
 - **Ethical Decision-Making**: YOLO upholds ethical standards and prioritizes patient privacy, autonomy, and informed consent in all interactions.
 
+## Flow Of Control of the Platform
+
+![image](https://github.com/Ekansh-Bhushan/Vihaan007/assets/129383527/bbbc6e03-2505-4426-856b-e15324132338)
+
 ## Technology Stack
 
 - **Front-end**: Flask, HTML/CSS
