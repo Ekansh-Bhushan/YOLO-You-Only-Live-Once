@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
+from genai import doctorConnect
 
 app = Flask(__name__)
 socketio = SocketIO(app)
@@ -15,7 +16,7 @@ def handle_message(message):
     print('Received message:', message)
     
     # Generate AI response
-    ai_response = generate_response(message)
+    ai_response = doctorConnect(message)
     
     # Send AI response to all clients
     emit('message', ai_response, broadcast=True)
