@@ -6,8 +6,9 @@ app = Flask(__name__)
 # Configuration for users database
 app.config['MYSQL_USERS_HOST'] = 'localhost'
 app.config['MYSQL_USERS_USER'] = 'root'
-app.config['MYSQL_USERS_PASSWORD'] = 'manu1234'
+app.config['MYSQL_USERS_PASSWORD'] = 'Ekansh@04'
 app.config['MYSQL_USERS_DB'] = 'users_db'
+
 
 # Configuration for doctors database
 # app.config['MYSQL_DOCTORS_HOST'] = 'localhost'
