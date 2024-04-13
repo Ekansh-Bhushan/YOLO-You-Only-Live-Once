@@ -34,6 +34,8 @@ YOLO's revenue streams include subscription plans, transaction fees, advertiseme
 1. Login area for Patients
 ![login](https://github.com/Ekansh-Bhushan/Vihaan007/assets/129383527/46727eb5-9aab-4768-81a4-04139d231ef7)
 
+2. Used of Hives Blockchain
+![image](https://github.com/Ekansh-Bhushan/Vihaan007/assets/129383527/a6157903-1746-49c4-8685-b42efcff3719)
 
 ## Getting Started
 
