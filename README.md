@@ -1,6 +1,7 @@
-# YOLO (You Only Live Onces)
+# YOLO (You Only Live Once)
 
-![YOLO Logo](./images/yolo_logo.png)
+![Yolo](https://github.com/Ekansh-Bhushan/Vihaan007/assets/129383527/b0e96d37-15b2-46f4-bb5b-0655fa585d7c)
+
 
 ## Overview
 
