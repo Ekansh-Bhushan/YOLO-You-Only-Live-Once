@@ -45,6 +45,15 @@ YOLO's revenue streams include subscription plans, transaction fees, advertiseme
 2. Used of Hives Blockchain
 ![image](https://github.com/Ekansh-Bhushan/Vihaan007/assets/129383527/a6157903-1746-49c4-8685-b42efcff3719)
 
+3. Chat App for prescriptions
+
+![image](https://github.com/Ekansh-Bhushan/Vihaan007/assets/129383527/39b26c50-62ef-4043-ab2e-74d9b45dc679)
+
+4. Snippet of GenAi code
+
+![image](https://github.com/Ekansh-Bhushan/Vihaan007/assets/129383527/7394f53f-56da-4abb-9c8b-b0f378dcf0f8)
+
+
 ## Getting Started
 
 To run YOLO locally, follow these steps:
